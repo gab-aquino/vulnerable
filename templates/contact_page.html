@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Contact {% endblock %}</h1>
+    <div class='contact'>
+        <p>{{ contact['id'] }}</p>
+        <p>{{ contact['created'] }}</p>
+        <h2>{{ contact['name'] }}</h2>
+        <p>{{ contact['last_name'] }}</p>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Add a New Contact {% endblock %}</h1>
+    <form method="post">
+        <label for="name">Name</label>
+        <br>
+        <input type="text" name="name"
+               placeholder="Contact name"
+               value="{{ request.form['name'] }}"></input>
+        <br>
+
+        <label for="content">Contact Last Name</label>
+        <input type="text" name="last_name" value="{{ request.form['last_name'] }}"></input>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
